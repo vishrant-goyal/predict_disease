@@ -495,3 +495,388 @@ BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.Thre
 2017-05-11 05:15:24.166+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1617ms.
 2017-05-11 05:54:16.664+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 367ms.
 2017-05-11 06:06:43.028+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1672ms.
+2017-05-11 06:36:02.356+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [72]:  Starting check pointing...
+2017-05-11 06:36:02.360+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [72]:  Starting store flush...
+2017-05-11 06:36:02.425+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 72 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 06:36:02.435+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 72 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 06:36:02.444+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [72]:  Store flush completed
+2017-05-11 06:36:02.444+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [72]:  Starting appending check point entry into the tx log...
+2017-05-11 06:36:02.445+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [72]:  Appending check point entry into the tx log completed
+2017-05-11 06:36:02.445+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [72]:  Check pointing completed
+2017-05-11 06:36:02.446+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 06:36:02.446+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 06:41:02.542+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [79]:  Starting check pointing...
+2017-05-11 06:41:02.544+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [79]:  Starting store flush...
+2017-05-11 06:41:02.669+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 79 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 06:41:02.678+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 79 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 06:41:02.696+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [79]:  Store flush completed
+2017-05-11 06:41:02.697+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [79]:  Starting appending check point entry into the tx log...
+2017-05-11 06:41:02.699+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [79]:  Appending check point entry into the tx log completed
+2017-05-11 06:41:02.699+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [79]:  Check pointing completed
+2017-05-11 06:41:02.699+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 06:41:02.699+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 06:41:28.480+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 294ms.
+2017-05-11 06:41:31.680+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1430ms.
+2017-05-11 06:46:02.808+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [85]:  Starting check pointing...
+2017-05-11 06:46:02.812+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [85]:  Starting store flush...
+2017-05-11 06:46:02.969+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 85 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 06:46:02.972+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 85 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 06:46:02.976+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [85]:  Store flush completed
+2017-05-11 06:46:02.977+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [85]:  Starting appending check point entry into the tx log...
+2017-05-11 06:46:02.981+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [85]:  Appending check point entry into the tx log completed
+2017-05-11 06:46:02.981+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [85]:  Check pointing completed
+2017-05-11 06:46:02.981+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 06:46:02.982+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 07:07:05.174+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1657ms.
+2017-05-11 07:20:22.242+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [87]:  Starting check pointing...
+2017-05-11 07:20:22.244+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [87]:  Starting store flush...
+2017-05-11 07:20:22.333+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 87 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 07:20:22.335+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 87 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 07:20:22.352+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [87]:  Store flush completed
+2017-05-11 07:20:22.352+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [87]:  Starting appending check point entry into the tx log...
+2017-05-11 07:20:22.357+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [87]:  Appending check point entry into the tx log completed
+2017-05-11 07:20:22.357+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [87]:  Check pointing completed
+2017-05-11 07:20:22.357+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 07:20:22.357+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 07:21:05.897+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 390ms.
+2017-05-11 07:25:22.470+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [89]:  Starting check pointing...
+2017-05-11 07:25:22.474+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [89]:  Starting store flush...
+2017-05-11 07:25:22.621+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 89 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 07:25:22.633+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 89 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 07:25:22.655+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [89]:  Store flush completed
+2017-05-11 07:25:22.655+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [89]:  Starting appending check point entry into the tx log...
+2017-05-11 07:25:22.658+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [89]:  Appending check point entry into the tx log completed
+2017-05-11 07:25:22.658+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [89]:  Check pointing completed
+2017-05-11 07:25:22.658+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 07:25:22.658+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 07:47:04.268+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population started: [:Disease(uuid) [provider: {key=lucene, version=1.0}]]
+2017-05-11 07:47:04.278+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Completed node store scan. Flushing all pending updates.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@3890bc5e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-05-11 07:47:04.278+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Shutting down executor.
+BatchingMultipleIndexPopulator{activeTasks=0, executor=java.util.concurrent.ThreadPoolExecutor@3890bc5e[Running, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 0], batchedUpdates = [], queuedUpdates = 0}
+2017-05-11 07:47:04.284+0000 INFO  [o.n.k.i.a.i.IndexPopulationJob] Index population completed. Index is now online: [:Disease(uuid) [provider: {key=lucene, version=1.0}]]
+2017-05-11 07:47:13.066+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Starting check pointing...
+2017-05-11 07:47:13.075+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Starting store flush...
+2017-05-11 07:47:13.153+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 96 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 07:47:13.160+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 96 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 07:47:13.182+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Store flush completed
+2017-05-11 07:47:13.182+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Starting appending check point entry into the tx log...
+2017-05-11 07:47:13.183+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Appending check point entry into the tx log completed
+2017-05-11 07:47:13.183+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [96]:  Check pointing completed
+2017-05-11 07:47:13.183+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 07:47:13.183+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 07:51:42.789+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 348ms.
+2017-05-11 07:53:13.311+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [98]:  Starting check pointing...
+2017-05-11 07:53:13.314+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [98]:  Starting store flush...
+2017-05-11 07:53:13.358+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 98 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 07:53:13.362+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 98 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 07:53:13.377+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [98]:  Store flush completed
+2017-05-11 07:53:13.377+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [98]:  Starting appending check point entry into the tx log...
+2017-05-11 07:53:13.378+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [98]:  Appending check point entry into the tx log completed
+2017-05-11 07:53:13.378+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [98]:  Check pointing completed
+2017-05-11 07:53:13.378+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 07:53:13.378+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 07:58:14.518+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Starting check pointing...
+2017-05-11 07:58:14.525+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Starting store flush...
+2017-05-11 07:58:14.604+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 112 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 07:58:14.611+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 112 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 07:58:14.638+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Store flush completed
+2017-05-11 07:58:14.639+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Starting appending check point entry into the tx log...
+2017-05-11 07:58:14.641+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Appending check point entry into the tx log completed
+2017-05-11 07:58:14.641+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [112]:  Check pointing completed
+2017-05-11 07:58:14.641+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 07:58:14.641+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 08:03:14.737+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Starting check pointing...
+2017-05-11 08:03:14.741+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Starting store flush...
+2017-05-11 08:03:14.860+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 115 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 08:03:14.869+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 115 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 08:03:14.894+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Store flush completed
+2017-05-11 08:03:14.894+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Starting appending check point entry into the tx log...
+2017-05-11 08:03:14.899+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Appending check point entry into the tx log completed
+2017-05-11 08:03:14.899+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [115]:  Check pointing completed
+2017-05-11 08:03:14.899+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 08:03:14.899+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 08:07:55.175+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1620ms.
+2017-05-11 08:11:51.344+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Starting check pointing...
+2017-05-11 08:11:51.346+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Starting store flush...
+2017-05-11 08:11:51.390+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 116 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 08:11:51.391+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 116 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 08:11:51.402+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Store flush completed
+2017-05-11 08:11:51.402+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Starting appending check point entry into the tx log...
+2017-05-11 08:11:51.402+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Appending check point entry into the tx log completed
+2017-05-11 08:11:51.403+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [116]:  Check pointing completed
+2017-05-11 08:11:51.403+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 08:11:51.403+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 08:28:01.736+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [117]:  Starting check pointing...
+2017-05-11 08:28:01.738+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [117]:  Starting store flush...
+2017-05-11 08:28:01.780+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 117 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 08:28:01.790+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 117 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 08:28:01.801+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [117]:  Store flush completed
+2017-05-11 08:28:01.801+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [117]:  Starting appending check point entry into the tx log...
+2017-05-11 08:28:01.802+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [117]:  Appending check point entry into the tx log completed
+2017-05-11 08:28:01.802+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [117]:  Check pointing completed
+2017-05-11 08:28:01.802+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 08:28:01.802+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 08:33:01.906+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [122]:  Starting check pointing...
+2017-05-11 08:33:01.910+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [122]:  Starting store flush...
+2017-05-11 08:33:01.988+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 122 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 08:33:01.995+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 122 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 08:33:02.023+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [122]:  Store flush completed
+2017-05-11 08:33:02.023+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [122]:  Starting appending check point entry into the tx log...
+2017-05-11 08:33:02.027+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [122]:  Appending check point entry into the tx log completed
+2017-05-11 08:33:02.027+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [122]:  Check pointing completed
+2017-05-11 08:33:02.027+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 08:33:02.027+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 08:33:55.598+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 243ms.
+2017-05-11 08:38:02.124+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [128]:  Starting check pointing...
+2017-05-11 08:38:02.127+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [128]:  Starting store flush...
+2017-05-11 08:38:02.245+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 128 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 08:38:02.250+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 128 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 08:38:02.262+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [128]:  Store flush completed
+2017-05-11 08:38:02.262+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [128]:  Starting appending check point entry into the tx log...
+2017-05-11 08:38:02.274+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [128]:  Appending check point entry into the tx log completed
+2017-05-11 08:38:02.274+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [128]:  Check pointing completed
+2017-05-11 08:38:02.274+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 08:38:02.274+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 08:43:02.367+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [142]:  Starting check pointing...
+2017-05-11 08:43:02.369+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [142]:  Starting store flush...
+2017-05-11 08:43:02.467+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 142 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 08:43:02.486+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 142 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 08:43:02.519+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [142]:  Store flush completed
+2017-05-11 08:43:02.519+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [142]:  Starting appending check point entry into the tx log...
+2017-05-11 08:43:02.522+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [142]:  Appending check point entry into the tx log completed
+2017-05-11 08:43:02.522+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [142]:  Check pointing completed
+2017-05-11 08:43:02.522+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 08:43:02.522+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 08:48:02.644+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [143]:  Starting check pointing...
+2017-05-11 08:48:02.646+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [143]:  Starting store flush...
+2017-05-11 08:48:02.700+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 143 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 08:48:02.704+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 143 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 08:48:02.711+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [143]:  Store flush completed
+2017-05-11 08:48:02.711+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [143]:  Starting appending check point entry into the tx log...
+2017-05-11 08:48:02.715+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [143]:  Appending check point entry into the tx log completed
+2017-05-11 08:48:02.715+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [143]:  Check pointing completed
+2017-05-11 08:48:02.715+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 08:48:02.715+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:01:10.026+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1615ms.
+2017-05-11 10:03:31.891+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [145]:  Starting check pointing...
+2017-05-11 10:03:31.895+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [145]:  Starting store flush...
+2017-05-11 10:03:31.939+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 145 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:03:31.946+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 145 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:03:31.967+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [145]:  Store flush completed
+2017-05-11 10:03:31.967+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [145]:  Starting appending check point entry into the tx log...
+2017-05-11 10:03:31.967+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [145]:  Appending check point entry into the tx log completed
+2017-05-11 10:03:31.967+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [145]:  Check pointing completed
+2017-05-11 10:03:31.967+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:03:31.967+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:08:41.795+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [160]:  Starting check pointing...
+2017-05-11 10:08:41.797+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [160]:  Starting store flush...
+2017-05-11 10:08:41.868+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 160 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:08:41.879+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 160 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:08:41.892+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [160]:  Store flush completed
+2017-05-11 10:08:41.892+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [160]:  Starting appending check point entry into the tx log...
+2017-05-11 10:08:41.892+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [160]:  Appending check point entry into the tx log completed
+2017-05-11 10:08:41.893+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [160]:  Check pointing completed
+2017-05-11 10:08:41.893+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:08:41.893+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:13:41.996+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [170]:  Starting check pointing...
+2017-05-11 10:13:41.999+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [170]:  Starting store flush...
+2017-05-11 10:13:42.119+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 170 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:13:42.129+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 170 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:13:42.156+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [170]:  Store flush completed
+2017-05-11 10:13:42.156+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [170]:  Starting appending check point entry into the tx log...
+2017-05-11 10:13:42.160+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [170]:  Appending check point entry into the tx log completed
+2017-05-11 10:13:42.160+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [170]:  Check pointing completed
+2017-05-11 10:13:42.160+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:13:42.160+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:14:09.263+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 226ms.
+2017-05-11 10:21:52.296+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [171]:  Starting check pointing...
+2017-05-11 10:21:52.299+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [171]:  Starting store flush...
+2017-05-11 10:21:52.392+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 171 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:21:52.400+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 171 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:21:52.418+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [171]:  Store flush completed
+2017-05-11 10:21:52.418+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [171]:  Starting appending check point entry into the tx log...
+2017-05-11 10:21:52.418+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [171]:  Appending check point entry into the tx log completed
+2017-05-11 10:21:52.418+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [171]:  Check pointing completed
+2017-05-11 10:21:52.418+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:21:52.418+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:26:52.528+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [179]:  Starting check pointing...
+2017-05-11 10:26:52.530+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [179]:  Starting store flush...
+2017-05-11 10:26:52.606+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 179 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:26:52.621+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 179 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:26:52.636+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [179]:  Store flush completed
+2017-05-11 10:26:52.642+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [179]:  Starting appending check point entry into the tx log...
+2017-05-11 10:26:52.646+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [179]:  Appending check point entry into the tx log completed
+2017-05-11 10:26:52.646+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [179]:  Check pointing completed
+2017-05-11 10:26:52.646+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:26:52.646+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:35:42.828+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [182]:  Starting check pointing...
+2017-05-11 10:35:42.830+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [182]:  Starting store flush...
+2017-05-11 10:35:42.874+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 182 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:35:42.883+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 182 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:35:42.889+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [182]:  Store flush completed
+2017-05-11 10:35:42.889+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [182]:  Starting appending check point entry into the tx log...
+2017-05-11 10:35:42.889+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [182]:  Appending check point entry into the tx log completed
+2017-05-11 10:35:42.889+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [182]:  Check pointing completed
+2017-05-11 10:35:42.889+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:35:42.889+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:36:11.269+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 330ms.
+2017-05-11 10:40:42.992+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [198]:  Starting check pointing...
+2017-05-11 10:40:42.994+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [198]:  Starting store flush...
+2017-05-11 10:40:43.045+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 198 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:40:43.050+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 198 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:40:43.057+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [198]:  Store flush completed
+2017-05-11 10:40:43.057+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [198]:  Starting appending check point entry into the tx log...
+2017-05-11 10:40:43.057+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [198]:  Appending check point entry into the tx log completed
+2017-05-11 10:40:43.057+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [198]:  Check pointing completed
+2017-05-11 10:40:43.057+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:40:43.057+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:45:43.147+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [213]:  Starting check pointing...
+2017-05-11 10:45:43.151+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [213]:  Starting store flush...
+2017-05-11 10:45:43.245+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 213 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:45:43.255+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 213 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:45:43.317+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [213]:  Store flush completed
+2017-05-11 10:45:43.317+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [213]:  Starting appending check point entry into the tx log...
+2017-05-11 10:45:43.321+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [213]:  Appending check point entry into the tx log completed
+2017-05-11 10:45:43.321+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [213]:  Check pointing completed
+2017-05-11 10:45:43.321+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:45:43.321+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:50:43.417+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [220]:  Starting check pointing...
+2017-05-11 10:50:43.419+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [220]:  Starting store flush...
+2017-05-11 10:50:43.482+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 220 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:50:43.485+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 220 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 10:50:43.496+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [220]:  Store flush completed
+2017-05-11 10:50:43.496+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [220]:  Starting appending check point entry into the tx log...
+2017-05-11 10:50:43.500+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [220]:  Appending check point entry into the tx log completed
+2017-05-11 10:50:43.500+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [220]:  Check pointing completed
+2017-05-11 10:50:43.501+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:50:43.501+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 10:52:27.713+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 369ms.
+2017-05-11 10:55:43.613+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [230]:  Starting check pointing...
+2017-05-11 10:55:43.616+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [230]:  Starting store flush...
+2017-05-11 10:55:43.676+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 230 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:55:43.679+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 230 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 10:55:43.692+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [230]:  Store flush completed
+2017-05-11 10:55:43.692+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [230]:  Starting appending check point entry into the tx log...
+2017-05-11 10:55:43.696+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [230]:  Appending check point entry into the tx log completed
+2017-05-11 10:55:43.696+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [230]:  Check pointing completed
+2017-05-11 10:55:43.696+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 10:55:43.696+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 11:14:44.128+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [231]:  Starting check pointing...
+2017-05-11 11:14:44.130+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [231]:  Starting store flush...
+2017-05-11 11:14:44.179+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 231 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 11:14:44.184+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 231 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 11:14:44.192+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [231]:  Store flush completed
+2017-05-11 11:14:44.192+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [231]:  Starting appending check point entry into the tx log...
+2017-05-11 11:14:44.192+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [231]:  Appending check point entry into the tx log completed
+2017-05-11 11:14:44.192+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [231]:  Check pointing completed
+2017-05-11 11:14:44.192+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 11:14:44.192+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 11:18:59.445+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes'as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+2017-05-11 11:18:59.475+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: CALL db.labels() YIELD label
+WITH COLLECT(label) AS labels
+RETURN 'labels' as a, labels as result
+UNION
+CALL db.relationshipTypes() YIELD relationshipType
+WITH COLLECT(relationshipType) AS relationshipTypes
+RETURN 'relationshipTypes'as a, relationshipTypes as result
+UNION
+CALL db.propertyKeys() YIELD propertyKey
+WITH COLLECT(propertyKey) AS propertyKeys
+RETURN 'propertyKeys' as a, propertyKeys as result
+2017-05-11 11:19:44.296+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [241]:  Starting check pointing...
+2017-05-11 11:19:44.304+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [241]:  Starting store flush...
+2017-05-11 11:19:44.404+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 241 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 11:19:44.425+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 241 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 11:19:44.440+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [241]:  Store flush completed
+2017-05-11 11:19:44.440+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [241]:  Starting appending check point entry into the tx log...
+2017-05-11 11:19:44.446+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [241]:  Appending check point entry into the tx log completed
+2017-05-11 11:19:44.446+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [241]:  Check pointing completed
+2017-05-11 11:19:44.456+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 11:19:44.456+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 11:24:44.542+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [247]:  Starting check pointing...
+2017-05-11 11:24:44.545+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [247]:  Starting store flush...
+2017-05-11 11:24:44.636+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 247 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 11:24:44.640+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 247 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 11:24:44.643+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [247]:  Store flush completed
+2017-05-11 11:24:44.643+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [247]:  Starting appending check point entry into the tx log...
+2017-05-11 11:24:44.645+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [247]:  Appending check point entry into the tx log completed
+2017-05-11 11:24:44.646+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [247]:  Check pointing completed
+2017-05-11 11:24:44.646+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 11:24:44.646+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 11:29:44.747+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Starting check pointing...
+2017-05-11 11:29:44.750+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Starting store flush...
+2017-05-11 11:29:44.816+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 258 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 11:29:44.827+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 258 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 11:29:44.849+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Store flush completed
+2017-05-11 11:29:44.849+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Starting appending check point entry into the tx log...
+2017-05-11 11:29:44.853+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Appending check point entry into the tx log completed
+2017-05-11 11:29:44.853+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [258]:  Check pointing completed
+2017-05-11 11:29:44.853+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 11:29:44.853+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 11:34:44.998+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Starting check pointing...
+2017-05-11 11:34:45.001+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Starting store flush...
+2017-05-11 11:34:45.081+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 267 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 11:34:45.087+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 267 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 11:34:45.104+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Store flush completed
+2017-05-11 11:34:45.104+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Starting appending check point entry into the tx log...
+2017-05-11 11:34:45.107+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Appending check point entry into the tx log completed
+2017-05-11 11:34:45.107+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [267]:  Check pointing completed
+2017-05-11 11:34:45.107+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 11:34:45.107+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 11:37:09.515+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 454ms.
+2017-05-11 11:39:45.216+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [274]:  Starting check pointing...
+2017-05-11 11:39:45.219+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [274]:  Starting store flush...
+2017-05-11 11:39:45.346+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 274 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 11:39:45.364+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 274 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 11:39:45.391+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [274]:  Store flush completed
+2017-05-11 11:39:45.391+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [274]:  Starting appending check point entry into the tx log...
+2017-05-11 11:39:45.392+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [274]:  Appending check point entry into the tx log completed
+2017-05-11 11:39:45.392+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [274]:  Check pointing completed
+2017-05-11 11:39:45.392+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 11:39:45.393+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 12:08:31.354+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 265ms.
+2017-05-11 12:54:16.947+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Starting check pointing...
+2017-05-11 12:54:16.950+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Starting store flush...
+2017-05-11 12:54:16.995+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 276 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 12:54:17.001+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 276 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a].
+2017-05-11 12:54:17.011+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Store flush completed
+2017-05-11 12:54:17.011+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Starting appending check point entry into the tx log...
+2017-05-11 12:54:17.012+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Appending check point entry into the tx log completed
+2017-05-11 12:54:17.012+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [276]:  Check pointing completed
+2017-05-11 12:54:17.012+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 12:54:17.012+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 12:55:48.777+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN {node_ids}
+AND id(b) IN {new_node_ids}
+RETURN r;
+2017-05-11 12:55:48.945+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN {node_ids}
+AND id(b) IN {new_node_ids}
+RETURN r;
+2017-05-11 12:59:17.103+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [284]:  Starting check pointing...
+2017-05-11 12:59:17.106+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [284]:  Starting store flush...
+2017-05-11 12:59:17.171+0000 INFO  [o.n.k.i.s.c.CountsTracker] About to rotate counts store at transaction 284 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 12:59:17.179+0000 INFO  [o.n.k.i.s.c.CountsTracker] Successfully rotated counts store at transaction 284 to [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.a], from [/Users/vishrant/RubyProjects/predict_disease/db/neo4j/development/data/databases/graph.db/neostore.counts.db.b].
+2017-05-11 12:59:17.197+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [284]:  Store flush completed
+2017-05-11 12:59:17.197+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [284]:  Starting appending check point entry into the tx log...
+2017-05-11 12:59:17.201+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [284]:  Appending check point entry into the tx log completed
+2017-05-11 12:59:17.201+0000 INFO  [o.n.k.i.t.l.c.CheckPointerImpl] Check Pointing triggered by scheduler for time threshold [284]:  Check pointing completed
+2017-05-11 12:59:17.201+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Starting log pruning.
+2017-05-11 12:59:17.201+0000 INFO  [o.n.k.i.t.l.p.LogPruningImpl] Log Rotation [0]:  Log pruning complete.
+2017-05-11 13:00:15.723+0000 INFO  [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN {node_ids}
+AND id(b) IN {new_node_ids}
+RETURN r;
+2017-05-11 13:00:15.754+0000 INFO  [o.n.c.i.CypherCompiler] Discarded stale query from the query cache: MATCH (a)-[r]->(b) WHERE id(a) IN {node_ids}
+AND id(b) IN {new_node_ids}
+RETURN r;
+2017-05-11 13:03:01.325+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 401ms.
+2017-05-11 13:26:36.339+0000 WARN  [o.n.k.i.c.MonitorGc] GC Monitor: Application threads blocked for 1620ms.

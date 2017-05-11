@@ -7,3 +7,23 @@ class BodyPart
 
 
 end
+
+
+# SEED DATA
+
+# Abdomen
+# Lower Abdomen
+# Middle Abdomen
+# Upper Abdomen
+# Right Side
+# Left Side
+# Chest
+# Both Sides
+# Around Eyes
+# Forehead
+# Neck
+# Throat
+# Around Temples
+# Left Eye
+# Right Eye
+# Both Eyes

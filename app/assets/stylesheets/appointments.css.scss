@@ -1,0 +1,60 @@
+// Place all the styles related to the Appointments controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.appointment-detail {
+  table-layout: fixed;
+  font-size: 13px;
+  p {
+    font-size: 13px;
+  }
+}
+
+.appointment_status {
+  background-color: lightgray;
+  color: chocolate;
+  font-size: 16px;
+  th {
+    text-align: center;
+  }
+}
+
+.booking_update {
+  display: none;
+}
+
+.cancel-update-booking {
+  font-size: 16px;
+}
+
+.new_entry_timing {
+  display: none;
+}
+
+.appointment_timing {
+  background-color: gray;
+  color: yellow;
+  font-weight: bolder;
+  font-size: 14px;
+}
+
+.patient_details {
+  background-color: antiquewhite;
+  font-size: 14px;
+}
+
+.edit-dpl-form {
+  display: none;
+}
+
+.form-messages {
+  color: red;
+  padding: 5px;
+  margin-left: 10px;
+  font-family: serif;
+  font-size: 14px;
+}
+.comm-form input[type="radio"]{
+  width: auto;
+  margin-top: 2px;
+}

@@ -1,0 +1,321 @@
+$(document).ready(function(){
+  
+  $("#query_res").children().find("#assign_cancel").click(function(){
+    $("#query_col").show();
+    $("#query_res").hide();
+    $("#query").val("");
+  });
+
+  $("#query_res").children().find("#assign_submit").click(function(){
+    var from_doctor = $("#query_res").children().find("#from_doctor").val();
+    var to_doctor = $("#query_res").children().find("#to_doctor").val();
+    var query_id = $("#query").val()
+    if (from_doctor == to_doctor){
+      alert("Same Doctor Selected");
+      return;
+    }
+    $.ajax({
+      type  : "POST",
+      url   : "/second_opinion_conversations/assign_particular_query",
+      data  : {query_id: query_id, to_doctor: to_doctor, from_doctor: from_doctor }
+    }).done(function(msg){
+      if (msg.success){
+        alert(msg.success);
+        $("#query_col").show();
+        $("#query_res").hide();
+        $("#query").val("");
+      }
+      else
+        alert(msg.error);
+    });
+  });
+
+  $("#query_info").click(function(){
+    var query_id = $("#query").val()
+    $.ajax({
+      type  : "POST",
+      url   : "/second_opinion_conversations/query_info",
+      data  : {query_id: query_id}
+    }).done(function(msg){
+      if(msg.success){
+        $("#query_col").hide();
+        $("#query_res div").first().html("<h4 style='color : blue'>Select the Doctor whom the Query with Query ID "+query_id+" to be assigned</h4>");
+        $("#query_res").children().find("#specialization").html("");
+        $("#query_res").children().find("#specialization").append("<option value= "+msg.speciality[0]+ ">"+msg.speciality[0]+"</option>");
+        $("#query_res").children().find("#from_doctor").html("");
+        $("#query_res").children().find("#from_doctor").append("<option value= "+msg.from_doctor[1]+ ">"+msg.from_doctor[0]+"</option>");
+        $("#query_res").children().find("#to_doctor").html("");
+        $("#query_res").children().find("#to_doctor").append("<option selected value=''>All</option>");
+        for(var i = 0;  i < msg.to_doctor.length; i++){
+          $("#query_res").children().find("#to_doctor").append("<option value= " + msg.to_doctor[i][1] + ">"+ msg.to_doctor[i][0] +"</option>");
+        }
+        $("#query_res").show();
+      }
+      else{
+        alert(msg.error);
+      }
+    });
+  });
+
+  $("#query_redirect").click(function(){
+    var query_id = $("#query_id").val()
+    $.ajax({
+      type  : "POST",
+      url   : "/second_opinion_conversations/query_info",
+      data  : {query_id: query_id}
+    }).done(function(msg){
+      if(msg.success){
+        $("#query_ask").hide();
+        $("#query_red div").first().html("<h5 style='color : black'><p>Redirect the Query with Query ID: " + query_id + "</p><p> Specialization: <font color='black'>"+msg.speciality[0]+"</font>"+ "  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "+" Doctor: <font color='black'>" +msg.from_doctor[0] + "</font><p></h5>");
+        $("#query_red").children().find("#specialization").html("");
+        $("#query_red").children().find("#specialization").append("<option value= "+msg.speciality[1]+ ">"+msg.speciality[0]+"</option>");
+        for(var i = 0;  i < msg.specialities.length; i++){
+          if( msg.specialities[i][0] != msg.speciality[0]){ 
+            $("#query_red").children().find("#specialization").append("<option value= "+msg.specialities[i][1]+ ">"+msg.specialities[i][0]+"</option>");
+          }
+        }
+        $("#query_red").children().find("#from_doctor").html("");
+        $("#query_red").children().find("#from_doctor").append("<option value= "+msg.from_doctor[1]+ ">"+msg.from_doctor[0]+"</option>");
+        for(var i = 0;  i < msg.to_doctor.length; i++){
+          if( msg.to_doctor[i][0] != msg.from_doctor[0]){ 
+            $("#query_red").children().find("#from_doctor").append("<option value= " + msg.to_doctor[i][1] + ">"+ msg.to_doctor[i][0] +"</option>");
+          }
+        }
+        $("#query_red").show();
+      }
+      else{
+        alert(msg.error);
+      }
+    });
+  });
+
+  $("#premium_query_redirect").click(function(){
+    var query_id = $("#premium_query_id").val()
+    $.ajax({
+      type  : "POST",
+      url   : "/second_opinion_conversations/query_info",
+      data  : {query_id: query_id, service_type: "premium"}
+    }).done(function(msg){
+      if(msg.success){
+        $("#premium_query_ask").hide();
+        $("#premium_query_red div").first().html("<h5 style='color : black'><p>Redirect the Query with Query ID: " + query_id + "</p><p> Specialization: <font color='black'>"+msg.speciality[0]+"</font>"+ "  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  "+" Doctor: <font color='black'>" +msg.from_doctor[0] + "</font><p></h5>");
+        $("#premium_query_red").children().find("#specialization").html("");
+        $("#premium_query_red").children().find("#specialization").append("<option value= "+msg.speciality[1]+ ">"+msg.speciality[0]+"</option>");
+        for(var i = 0;  i < msg.specialities.length; i++){
+          if( msg.specialities[i][0] != msg.speciality[0]){ 
+            $("#premium_query_red").children().find("#specialization").append("<option value= "+msg.specialities[i][1]+ ">"+msg.specialities[i][0]+"</option>");
+          }
+        }
+        $("#premium_query_red").children().find("#from_doctor").html("");
+        $("#premium_query_red").children().find("#from_doctor").append("<option value= "+msg.from_doctor[1]+ ">"+msg.from_doctor[0]+"</option>");
+        for(var i = 0;  i < msg.to_doctor.length; i++){
+          if( msg.to_doctor[i][0] != msg.from_doctor[0]){ 
+            $("#premium_query_red").children().find("#from_doctor").append("<option value= " + msg.to_doctor[i][1] + ">"+ msg.to_doctor[i][0] +"</option>");
+          }
+        }
+        $("#premium_query_red").show();
+      }
+      else{
+        alert(msg.error);
+      }
+    });
+  });
+
+  $("#query_red").children().find("#assign_cancel").click(function(){
+    $("#query_ask").show();
+    $("#query_red").hide();
+    $("#query_id").val("");
+  });
+
+  $("#premium_query_red").children().find("#assign_cancel").click(function(){
+    $("#premium_query_ask").show();
+    $("#premium_query_red").hide();
+    $("#premium_query_id").val("");
+  });
+
+  $("#query_red").children().find("#redirect_submit").click(function(){
+    var doctor = $("#query_red").children().find("#from_doctor").val();
+    var speciality = $("#query_red").children().find("#specialization").val();
+    var query_id = $("#query_id").val()
+    $.ajax({
+      type  : "POST",
+      url   : "/second_opinion_conversations/redirect_query",
+      data  : {query_id: query_id, doctor_id: doctor, second_opinion_id: speciality}
+    }).done(function(msg){
+      if (msg.success){
+        alert(msg.message);
+        $("#query_ask").show();
+        $("#query_red").hide();
+        $("#query_id").val("");
+      }
+      else
+        alert(msg.error);
+    });
+  });
+
+  $("#premium_query_red").children().find("#premium_redirect_submit").click(function(){
+    var doctor = $("#premium_query_red").children().find("#from_doctor").val();
+    var speciality = $("#premium_query_red").children().find("#specialization").val();
+    var query_id = $("#premium_query_id").val()
+    $.ajax({
+      type  : "POST",
+      url   : "/second_opinion_conversations/redirect_query",
+      data  : {query_id: query_id, doctor_id: doctor, second_opinion_id: speciality, service_type: "premium"}
+    }).done(function(msg){
+      if (msg.success){
+        alert(msg.message);
+        $("#premium_query_ask").show();
+        $("#premium_query_red").hide();
+        $("#premium_query_id").val("");
+      }
+      else
+        alert(msg.error);
+    });
+  });
+
+  $("#query_red").children().find("#specialization").change(function(){
+    var speciality = $(this).val();
+    $.ajax({
+      type	: "GET",
+      url		: "/second_opinion_conversations/get_specialities_doctors",
+      data 	: {specialization: speciality, query: "redirect"},
+      success : function(data){
+        $("#query_red").children().find("#from_doctor").html("");
+        $("#query_red").children().find("#from_doctor").append("<option selected value=''>All</option>");
+        for(var i=0;  i<data.doctors.length; i++){
+          $("#query_red").children().find("#from_doctor").append("<option value= " + data.doctors[i][1] + ">"+ data.doctors[i][0] +"</option>");
+        }
+      },
+      error	: function(data){
+        alert(data.error);
+      }
+    });
+  });
+
+  $("#premium_query_red").children().find("#specialization").change(function(){
+    var speciality = $(this).val();
+    $.ajax({
+      type  : "GET",
+      url   : "/second_opinion_conversations/get_specialities_doctors",
+      data  : {specialization: speciality, query: "redirect", service_type: "premium"},
+      success : function(data){
+        $("#premium_query_red").children().find("#from_doctor").html("");
+        $("#premium_query_red").children().find("#from_doctor").append("<option selected value=''>All</option>");
+        for(var i=0;  i<data.doctors.length; i++){
+          $("#premium_query_red").children().find("#from_doctor").append("<option value= " + data.doctors[i][1] + ">"+ data.doctors[i][0] +"</option>");
+        }
+      },
+      error : function(data){
+        alert(data.error);
+      }
+    });
+  });
+
+  $("#specialization").change(function(){
+    var speciality = $(this).val();
+    var chronic = $('#chronic').is(":checked") ? 1: 0;
+    $.ajax({
+      type  : "GET",
+      url   : "/second_opinion_conversations/get_specialities_doctors",
+      data  : {specialization: speciality, chronic: chronic},
+      success : function(data){
+        $("#from_doctor").html("");
+        $("#from_doctor").append("<option selected value=''>All</option>");
+        for(var i=0;  i<data.doctors.length; i++){
+          $("#from_doctor").append("<option value= " + data.doctors[i][1] + ">"+ data.doctors[i][0] +"</option>");
+        }
+
+        $("#to_doctor").html("");
+        $("#to_doctor").append("<option selected value=''>All</option>");
+        for(var i=0;  i<data.doctors.length; i++){
+          $("#to_doctor").append("<option value= " + data.doctors[i][1] + ">"+ data.doctors[i][0] +"</option>");
+        }
+
+        $("#doctor_id").html("");
+        $("#doctor_id").append("<option selected value=''>All</option>");
+        for(var i=0;  i<data.doctors.length; i++){
+          $("#doctor_id").append("<option value= " + data.doctors[i][1] + ">"+ data.doctors[i][0] +"</option>");
+        }
+      },
+      error : function(data){
+        alert(data.error);
+      }
+    });
+  });
+
+  
+  $("#chronic").change(function(){
+    var chronic = $(this).is(":checked") ? 1: 0;
+    $.ajax({
+      type  : "GET",
+      url   :  "/second_opinion_conversations/get_specialities_doctors",
+      data  : {chronic: chronic},
+      success : function(data){
+        $("#specialization").html("");
+        $("#specialization").append("<option selected value=''>All</option>");
+        for(var i=0;  i<data.specialities.length; i++){
+          $("#specialization").append("<option value= " + data.specialities[i][1] + ">"+ data.specialities[i][0] +"</option>");
+        }
+
+        $("#doctor_id").html("");
+        $("#doctor_id").append("<option selected value=''>All</option>");
+        for(var i=0;  i<data.doctors.length; i++){
+          $("#doctor_id").append("<option value= " + data.doctors[i][1] + ">"+ data.doctors[i][0] +"</option>");
+        }
+      },
+      error : function(data){
+
+      }
+    });
+  });
+  
+  $(".report_spam").click(function(){
+    var form = $(this).parents("td");
+    var id = $(this).parents(".report_spam_form").find("#query_id").val();
+    var spam = confirm("Do you want to mark this query as spam?\nQuery Id = " + id);
+    if(spam == true){
+      $.ajax({
+          type  : 'GET',
+          url   : '/report_spam', 
+          data  : {query_id: id},
+          success : function(data) {
+            if (data.success) {
+              $(form).html("<span>Already marked Spam</span>")
+              alert(data.success);
+            } else {
+              console.log(data);
+              alert(data.error);
+            }
+          },
+          error : function(data){
+            alert(data.error);
+          }
+      });
+      return false
+    }else{
+      return false
+    }
+  });
+
+  $("#query_followup").click(function(){
+    var query_id = $("#query_followup_id").val()
+    $.ajax({
+          type  : 'POST',
+          url   : '/second_opinion_conversations/follow_up', 
+          data  : {query_id: query_id},
+          success : function(data) {
+            if (data.success) {
+              alert(data.success);
+              $("#query_followup_id").val("");
+            } else {
+              alert(data.error);
+              $("#query_followup_id").val("");
+            }
+          },
+          error : function(data){
+            alert(data.error);
+          }
+      });
+  });
+
+});

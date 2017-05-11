@@ -1,0 +1,316 @@
+ready = undefined
+ready = undefined
+ready = ->
+
+
+  $(".panel-collapsable").children(".panel-heading").click ->
+    group = undefined
+    group = $(this).parent().parent()
+    group.children(".panel").children(".panel-body").collapse "hide"  if group.hasClass("panel-group one-at-a-time")
+    $(this).next(".panel-body").collapse "toggle"
+    return
+
+  $(".rximage").each ->
+	  deg = undefined
+	  rotate = undefined
+	  deg = 90
+	  rotate = "rotate(" + deg + "deg)"
+	  $(this).css
+	    "-webkit-transform": rotate
+	    "-moz-transform": rotate
+	    "-o-transform": rotate
+	    "-ms-transform": rotate
+	    transform : rotate
+    return
+
+  # Update assignee on a doctor when selected value is changed
+  $(".assign-to").change ->
+    assignee_id = $(this).val()
+    doctor_id = $(this).attr("data-id")
+    $.ajax
+      type: 'POST'
+      url: '/doctors/assign_user'
+      data: {assignee_id: assignee_id, doctor_id: doctor_id}
+    return
+
+  # Update assignee on a rx when selected value is changed
+  $(".assign-rx").change ->
+    assignee_id = $(this).val()
+    rx_id = $(this).attr("data-id")
+    $.ajax
+      type: 'POST'
+      url: '/rxes/assign_user'
+      data: {assignee_id: assignee_id, rx_id: rx_id}
+    return
+
+  $(".dateDoctor").datepicker
+    dateFormat: "yy-mm-dd"
+    changeMonth: true
+    changeYear: true
+    maxDate: 0
+    yearRange: "1900:+nn"
+
+  $(".verify").click ->
+    if $(this).find(".is-empty").length <= 0
+      currentimg = undefined
+      id = undefined
+      name = undefined
+      # Toggle the image
+      currentEle = $(this)
+      currentEle.find('img').attr 'src', "<%= asset_path('loading.png') %>"
+      id = $(this).attr("data-id")
+      name = $(this).attr("name")
+      $.ajax
+          type: "GET"
+          url: "/doctors/" + id + "/" + name + "_verification_status_toggle"
+          async: true
+          success: (data) ->
+            if data.image_name is "verified_as_true"
+              currentEle.find('img').attr 'src', "<%= asset_path('verified_as_true.png') %>"
+            else if data.image_name is "verified_as_false"
+              currentEle.find('img').attr 'src', "<%= asset_path('verified_as_false.png') %>"
+            else
+              currentEle.find('img').attr 'src', "<%= asset_path('unverified.png') %>"
+            return
+    end
+    return
+
+  $("#side-menu").children("li").not(".navactive").has("ul").children("ul").slideUp()
+
+  $("#side-menu").children("li").click ->
+  	if $(this).hasClass("navactive")
+	    $(this).find("ul.nav-second-level").removeClass "in"
+	    $(this).removeClass 'navactive'
+	  else
+	  	$(this).siblings(".navactive").find("ul.nav-second-level").removeClass "in"
+		  $(this).siblings(".navactive").removeClass "navactive"
+		  $(this).find("ul.nav-second-level").addClass "in"
+		  $(this).toggleClass "navactive"
+  	return
+
+  $(".verify-association").click ->
+    if $(this).find(".is-empty").length <= 0
+      currentimg = undefined
+      id = undefined
+      name = undefined
+      # Toggle the image
+      id = $(this).attr("data-id")
+      name = $(this).attr("name")
+      currentEle = $(this)
+      currentEle.find('img').attr 'src', "<%= asset_path('loading.png') %>"
+      $.ajax
+        type: "GET"
+        url: "/doctors/" + name + "_verification_status_toggle/" + id
+        async: true
+        success: (data) ->
+          if data.image_name is "verified_as_true"
+            currentEle.find('img').attr 'src', "<%= asset_path('verified_as_true.png') %>"
+          else if data.image_name is "verified_as_false"
+            currentEle.find('img').attr 'src', "<%= asset_path('verified_as_false.png') %>"
+          else
+            currentEle.find('img').attr 'src', "<%= asset_path('unverified.png') %>"
+          end
+          return
+      end
+    return
+
+  $(".verify-pl").click ->
+    if $(this).find(".is-empty").length <= 0
+      currentimg = undefined
+      id = undefined
+      name = undefined
+      currentEle = $(this)
+      currentEle.find('img').attr 'src', "<%= asset_path('loading.png') %>"
+      # Toggle the image
+      id = $(this).attr("data-id")
+      name = $(this).attr("name")
+      $.ajax
+        type: "GET"
+        url: "/practice_locations/" + id + "/" + name + "_verification_status_toggle"
+        async: true
+        success: (data) ->
+          if data.image_name is "verified_as_true"
+            currentEle.find('img').attr 'src', "<%= asset_path('verified_as_true.png') %>"
+          else if data.image_name is "verified_as_false"
+            currentEle.find('img').attr 'src', "<%= asset_path('verified_as_false.png') %>"
+          else
+            currentEle.find('img').attr 'src', "<%= asset_path('unverified.png') %>"
+          end
+          return
+      return
+
+  $(".verify-pl-association").click ->
+    if $(this).find(".is-empty").length <= 0
+      currentimg = undefined
+      id = undefined
+      name = undefined
+      currentEle = $(this)
+      currentEle.find('img').attr 'src', "<%= asset_path('loading.png') %>"
+      # Toggle the image
+      id = $(this).attr("data-id")
+      name = $(this).attr("name")
+      $.ajax
+        type: "GET"
+        url: "/practice_locations/" + name + "_verification_status_toggle/" + id
+        async: true
+        success: (data) ->
+          if data.image_name is "verified_as_true"
+            currentEle.find('img').attr 'src', "<%= asset_path('verified_as_true.png') %>"
+          else if data.image_name is "verified_as_false"
+            currentEle.find('img').attr 'src', "<%= asset_path('verified_as_false.png') %>"
+          else
+            currentEle.find('img').attr 'src', "<%= asset_path('unverified.png') %>"
+          end
+          return
+      return
+
+  # Show the form on clicking on markasduplicate button
+  $(".markasduplicate").click ->
+    $(".main").animate
+      opacity: 0.2
+    , 100
+    $(".mark-as-duplicate-form").show()
+    $(".mark-as-duplicate-form").animate opacity: 1
+    return
+
+  #Show the Pop-Up div to add or update a card
+  $(".popupButton").click ->
+    $(".main").animate
+      opacity: 0.2
+    , 100
+    $(".changestatus-popup").show()
+    btn = $(this)
+    data_actiontype = $(this).attr("data-actiontype")
+    doctor_id = $(this).attr("data-doctorid")
+    if data_actiontype == "update"
+      $("#reason-dropdown").hide()
+      $(".changestatus-popup form").attr("action", "/doctors/" + doctor_id + "/update_review_status")
+    else if data_actiontype == "suspend"
+      $("#reason-dropdown").hide()
+      $(".changestatus-popup form").attr("action", "/doctors/" + doctor_id + "/mark_as_suspended")
+    else if data_actiontype == "unsuspend"
+      $("#reason-dropdown").hide()
+      $(".changestatus-popup form").attr("action", "/doctors/" + doctor_id + "/activate_from_suspend")
+    else if data_actiontype == "reject"
+      $("#reason-dropdown").show()
+      $(".changestatus-popup form").attr("action", "/doctors/" + doctor_id + "/reject_doctor")
+    else if data_actiontype == "publish"
+      $("#reason-dropdown").hide()
+      $(".changestatus-popup form").attr("action", "/doctors/" + doctor_id + "/publish")
+    else if data_actiontype == "unpublish"
+      $("#reason-dropdown").hide()
+      $(".changestatus-popup form").attr("action", "/doctors/" + doctor_id + "/unpublish")
+    else if data_actiontype == "PracticeLocation_publish"
+      location_id = btn.attr("data-practicelocationid")
+      $("#reason-dropdown").hide()
+      $(".changestatus-popup form").attr("action", "/practice_locations/" + location_id + "/publish")
+    else if data_actiontype == "PracticeLocation_unpublish"
+      location_id = btn.attr("data-practicelocationid")
+      $("#reason-dropdown").hide()
+      $(".changestatus-popup form").attr("action", "/practice_locations/" + location_id + "/unpublish")
+    return
+
+
+  $('.selectcity a').click ->
+    $('.globalcity').text $(this).attr('data-cityname')
+    $.ajax
+      url: "/set_global_city"
+      data: cityname: $(this).attr('data-cityname')
+      datatype: 'json'
+      success: ->
+        pathname = window.location.pathname
+        if (pathname is '/doctors') or (pathname is '/practice_locations') or (pathname is '/tagged_tasks/created_by_me') or (pathname is '/tagged_tasks/my_tasks') or (pathname is '/tagged_tasks/all_tasks') or pathname == '/doctors/my_tasks'
+          location.href = location.href.replace(/&?((page%5D)|(page))=([\d]*)/gi, "")
+          location.reload true
+        end
+        return
+    return
+
+
+  #Click event on close button of Add card pop-up
+  $("#changestatus-boxclose").click ->
+    $(".changestatus-popup").css "display", "none"
+    $(".appointment-changestatus-popup").css "display", "none"
+    $('#description').val('')
+    $(".main").animate opacity: 1
+
+    return
+
+  #Click event on close button of Mark as duplicate form
+  $("#markasduplicate-boxclose").click ->
+    $(".mark-as-duplicate-form").css "display", "none"
+    $(".main").animate opacity: 1
+    return
+
+  # Show reason type only when action type is approve
+  $('#action-type').change ->
+    selected_value = $('#action-type').val()
+    if selected_value is "2"
+      $('#reason-dropdown').show()
+    else
+      $('#reason-dropdown').hide()
+
+    if selected_value is "1"
+      $('#comment-type').show()
+    else
+      $('#comment-type').hide()
+    return
+
+  # Show loading animation when clicked on Edit button
+  $('.load-btn').click ->
+    $('#loading-img').show()
+    $(".container").animate opacity: 0.2
+    $('#loading-img').animate opacity: 1
+    return
+
+
+  # Rx Specific CoffeeScripts
+  # TODO: [NEHA] Move these to rxes.js.coffee
+  $('.edit_doctor').click ->
+    $('.link_guid_form').show()
+    $('.doctor_suggest_list').removeClass("hidden")
+    return
+
+  $(".assign-city").change ->
+    city_id = $(this).val()
+    rx_id = $(this).attr("data-id")
+    $.ajax
+      type: 'POST'
+      url: '/rxes/assign_city'
+      data: {city_id: city_id, id: rx_id}
+    return
+
+
+  # Show more link and animation
+  $(".show-more-link").click ->
+    $(this).siblings("table").toggleClass("more")
+    return
+
+  # Swap doctors to be merged - swap master doctor entry on possible duplicates page
+  $(".swap-doctors-to-merge").click ->
+    curr_parent = $(this).parents('.possible_duplicate_record')
+    merge_with = curr_parent.find('.merge_with').find('a')
+    to_be_merged = curr_parent.find('.to_be_merged').find('a')
+    merge_with_id = curr_parent.find('.merge_with_id').val()
+    to_be_merged_id = curr_parent.find('.to_be_merged_id').val()
+
+    curr_parent.find('.merge_with').html(to_be_merged)
+    curr_parent.find('.to_be_merged').html(merge_with)
+
+    curr_parent.find('.merge_with_id').val(to_be_merged_id)
+    curr_parent.find('.to_be_merged_id').val(merge_with_id)
+
+    return
+
+  #####################################
+
+  pathname_url = window.location.pathname
+  activeElement = $('.sidebar-nav a[href=\'' + pathname_url + '\']')
+  activeElement.closest('ul').parent().addClass('navactive')
+  activeElement.closest('ul').addClass('in')
+  activeElement.css('color', '#2a6496').css('background-color', '#eeeeee')
+
+  return
+
+$(document).ready ready
+$(document).on "page:load", ready

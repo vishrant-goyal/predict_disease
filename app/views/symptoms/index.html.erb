@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<% title = "Symptom List" %>
+<% provide(:title, title) %>
+<% content_for(:body_attributes) do %>
+    data-no-turbolink="true"
+<% end %>
+
+<% @symptoms.each do |symptom| %>
+    <%= symptom.name %>
+<% end %>

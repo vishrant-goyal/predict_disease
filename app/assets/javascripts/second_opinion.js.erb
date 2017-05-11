@@ -1,0 +1,43 @@
+$(document).ready(function(){
+  
+  $("#myTable").tablesorter();
+
+  if ($("#myTable").find('thead') != null && $("#myTable").find('thead').length > 0){
+    var thead_pos = $("#myTable > thead").offset().top;
+    var header = $("#myTable").find('thead');
+    var show = false;
+    $bodyCells = $("#myTable").find('tbody tr:first').children();
+
+    $(window).bind("scroll", function(){
+
+      var offset = $(this).scrollTop();
+
+      var b_ColWidth = $bodyCells.map(function() {
+        return $(this).width();
+      }).get();
+
+      var h_ColWidth = header.find('tr').children().map(function(){
+        return $(this).width();
+      }).get();
+
+      if (offset >= thead_pos && show == false) {
+        header.css({ position: 'fixed', top: '0px' });
+        header.css("background-color", "white");
+      
+        $bodyCells.each(function(i,v){
+          $(v).width(b_ColWidth[i]);
+        })
+        
+        header.find('tr').children().each(function(i, v) {
+          $(v).width(h_ColWidth[i]);
+        });    
+
+        show = true;
+      } else if (offset < thead_pos) {
+          header.css({position: '', top: ''});
+          show = false;
+      }
+    });
+  } 
+
+});

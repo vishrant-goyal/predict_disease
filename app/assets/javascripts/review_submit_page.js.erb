@@ -1,0 +1,130 @@
+/*Rating Plugin */
+$.fn.rating = function(uncheckPos , checkPos) { /*
+  var self= this;
+  var ratingCircle =  this.find("li >a");
+  var actualRating= self.children(":hidden");
+  var originalState = function(){
+      ratingCircle.toArray().forEach(function(e){
+      if($(e).data("value") <= actualRating.val())
+        $(e).css("background-position", checkPos);
+       else
+        $(e).css("background-position", uncheckPos);
+    });
+  };
+  originalState();
+
+  ratingCircle.click(function(event){
+    var parentli=  $(this).parent();
+    parentli.prevAll().add(parentli).find('a').css("background-position", checkPos);
+    parentli.nextAll().find('a').css("background-position", uncheckPos);
+    actualRating.val($(this).data("value"));
+  });
+
+  ratingCircle.hover(function(event){
+    var parentli=  $(this).parent();
+    parentli.prevAll().add(parentli).find('a').css("background-position", checkPos);
+    parentli.nextAll().find('a').css("background-position", uncheckPos);
+  },function() { 
+      originalState();
+  });*/
+};
+
+/*Rating Plugin */
+$.fn.rating = function(uncheckPos , checkPos) { 
+  var self= this;
+  var ratingCircle =  this.find("li >a");
+  var actualRating= self.children(":hidden");
+  var originalState = function(){
+      ratingCircle.toArray().forEach(function(e){
+      if($(e).data("value") <= actualRating.val())
+        $(e).css("background-position", checkPos);
+       else
+        $(e).css("background-position", uncheckPos);
+    });
+  };
+  originalState();
+
+  ratingCircle.click(function(event){ 
+    var parentli=  $(this).parent();
+    parentli.prevAll().add(parentli).find('a').css("background-position", checkPos);
+    parentli.nextAll().find('a').css("background-position", uncheckPos);
+    actualRating.val($(this).data("value"));
+  });
+
+  ratingCircle.hover(function(event){ 
+    var parentli=  $(this).parent();
+    parentli.prevAll().add(parentli).find('a').css("background-position", checkPos);
+    parentli.nextAll().find('a').css("background-position", uncheckPos);
+  },function() { 
+      originalState();
+  });
+};
+
+
+/*Ready function*/
+$(document).ready(function(){
+  $(".prim-rating").rating("0 -24px" ,"0 0");
+  $(".sec-rating .lh42 ul").toArray().forEach(function(secRatingElem){
+    $(secRatingElem).rating("0 -16px" ,"0 0");
+  });
+
+  /*$(".previous-rating >ul").toArray().forEach(function(prevRatingElem){
+    $(prevRatingElem).rating("-3px 172px" , "-3px 140px");
+  });*/
+
+  $(".timeline-item").hover(function () {
+    $(".timeline-item").removeClass("active");
+    $(this).toggleClass("active");
+    $(this).prev(".timeline-item").toggleClass("close");
+    $(this).next(".timeline-item").toggleClass("close");
+});
+
+
+/*var images = $('ul.clinic-images li');
+
+images.hide().first().show();
+
+
+$('.next').click(function() { 
+    images.fadeOut(300).eq(2).fadeIn(300);
+});
+
+*/
+
+
+  $('.custom-button > input[type=file]').change(function(){
+    $(".upload-file-name").text($(this).val().split("\\").pop());
+  });
+  
+  $(".rating-filled").toArray().forEach(function(el){
+      var modWid = $(el).find(".prev-rating").text()/0.05;
+      $(el).width(modWid+"%");
+  });
+  
+  $(".alert").click(function(){$(this).hide();});
+  
+  
+  //$("#doctor_name").focus(function(){if(!$(this).val())$(this).val("Dr. ");});
+  
+ 
+  
+  $(".upload-file-name ").click(function(){
+  	$(".upload-ption").click();
+  });
+  
+  $('form.review-collection').submit(function(){
+    $('input[type=submit]', this).attr('disabled', 'disabled');
+    $('input[type=submit]', this).addClass('submit-loading');
+  });
+  
+  $(".reviewtext textarea").keyup(function(){
+  	var count = $(this).val().replace(/\s+/g, ' ').length;
+  	$(".reviewtext .charcount").text(count);
+  });
+  
+  $(".patient-mobile").keypress(function(event){
+  	return /^[0-9]*$/.test(String.fromCharCode(event.which))
+  });
+  
+});
+

@@ -1,0 +1,23 @@
+// Place all the styles related to the doctors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul.ui-autocomplete {
+  display: block;
+  z-index: 1000;
+}
+
+.searchCity {
+  width: inherit;
+  margin: 5px;
+}
+
+.selectcity li a {
+  color: black;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.verify-table{
+  height: 1.5cm;
+}

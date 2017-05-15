@@ -4,7 +4,23 @@
 <% content_for(:body_attributes) do %>
     data-no-turbolink="true"
 <% end %>
-
-<% @symptoms.each do |symptom| %>
-    <%= symptom.name %>
-<% end %>
+<div class="row">
+  <h3><%= title %></h3>
+  <div class="filters">
+    <%= form_tag '/symptom_properties', method: 'get', class: '' do %>
+        <% @symptoms.each do |symptom| %>
+            <div class="row">
+              <li>
+                <label>
+                  <%= symptom.name %>
+                  <%= check_box_tag symptom.name.downcase, true, false %>
+                </label>
+              </li>
+            </div>
+        <% end %>
+        <div class="form-group col-sm-3">
+          <%= submit_tag :submit, class: "form-control btn btn-block btn-success" %>
+        </div>
+    <% end %>
+  </div>
+</div>
